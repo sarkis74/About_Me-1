@@ -6,23 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About H'Liana</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-    <h1>About H'Liana</h1>
-    <ol>
-        <li>Does H'Liana like to climb mountains? : Yes</li>
-        <li>Does H'Liana have any pets? : Yes</li>
-    </ol>
-
+    <div class="box">
+        <img src="me.png" alt="it me!" width="40%">
+        <h1>About H'Liana</h1>
+        <p>Thanks for playing! I hope you learned a little bit about me in the process. How many did you get correct?</p>
+        <h2>Correct answers:</h2>
+        <ol>
+            <li><b>Does H'Liana like to hike?</b> : Yes</li>
+            <li><b>Is H'Liana originally from Seattle?</b> : No</li>
+            <li><b>Does H'Liana like peanuts?</b> : No</li>
+            <li><b>Is H'Liana tall?</b> : No</li>
+            <li><b>Is H'Liana's dog the cutest dog in the world?</b> : Yes</li>
+        </ol>
+        <div class="bye">Bye for now!</div>
+    </div>
+    
     <script>
+        "use strict";
         var userName = prompt('Welcome! What\'s your name?');
-        var mountains = prompt('Does H\'Liana like to climb mountains?')
-        if(mountains === 'yes' || mountains === 'ya'){
-            alert('Cool. Same.');
-        } else if(mountains === 'no'){
-            alert('Why not?');
+        console.log('Name: ' + userName);
+        alert('Nice to meet you, ' + userName + '! Let\'s play a game. Guess the answers to the following questions using either "yes"/"y" or "no"/"n"!');
+
+        //Do I like to hike?
+        var hike = prompt('Does H\'Liana like to hike?');
+        hike = hike.toLowerCase();
+        console.log('Does H\'Liana like to hike?: ' + hike);
+        if(hike === 'yes' || hike === 'y'){
+            alert('Correct! In her spare time, she goes on backpacking trips both nearby and around the US!');
+        } else if(hike === 'no' || hike === 'n'){
+            alert('Lol');
         } else{
-            alert('Come on, answer yes or no');
+            alert('Did you read the rules? Answer yes or no, please!');
+        }
+
+        //Am I from Seattle?
+        var seattle = prompt('Is H\'Liana originally from Seattle?');
+        seattle = seattle.toLowerCase();
+        console.log('Is H\'Liana originally from Seattle?: ' + seattle);
+        if(seattle === 'yes' || seattle === 'y'){
+            alert('Nope! She is originally from Charleston, South Carolina!');
+        } else if(seattle === 'no' || seattle === 'n'){
+            alert('Correct! She is originally from Charleston, South Carolina.');
+        } else{
+            alert('Did you read the rules? Answer yes or no, please!');
+        }
+
+        //Do I like peanuts?
+        var peanuts = prompt('Does H\'Liana like peanuts?');
+        peanuts = peanuts.toLowerCase();
+        console.log('Does H\'Liana like peanuts?: ' + peanuts);
+        if(peanuts === 'yes' || peanuts === 'y'){
+            alert('Nope! She is actually allergic to peanuts.');
+        } else if(peanuts === 'no' || peanuts === 'n'){
+            alert('Correct! She is allergic.');
+        } else{
+            alert('Did you read the rules? Answer yes or no, please!');
+        }
+
+        //Am I tall?
+        var tall = prompt('Is H\'Liana tall?');
+        tall = tall.toLowerCase();
+        console.log('Is H\'Liana tall?: ' + peanuts);
+        if(tall === 'yes' || tall === 'y'){
+            alert('Unfortunately, no. She is 5 foot 1, which makes it difficult to see at concerts!');
+        } else if(tall === 'no' || tall === 'n'){
+            alert('Unfortunately, you are correct. She is only 5 foot 1.');
+        } else{
+            alert('Did you read the rules? Answer yes or no, please!');
+        }
+
+        //Is my dog the cutest?
+        var dogCute = prompt('Is H\'Liana\'s dog the cutest dog in the world?');
+        dogCute = dogCute.toLowerCase();
+        console.log('Is H\'Liana\'s dog the cutest dog in the world: ' + dogCute);
+        if(dogCute === 'yes' || dogCute === 'y'){
+            alert('OF COURSE HE IS!!');
+        } else if(dogCute === 'no' || dogCute === 'n'){
+            alert('No!?! You must be a sad person.');
+        } else{
+            alert('Did you read the rules? Answer yes or no, please!');
         }
     </script>
 </body>

@@ -1,4 +1,31 @@
-* {
-    background-color: oldlace;
-    font-family: 'Courier New', Courier, monospace;
+body{
+    margin: 30px auto 30px auto;
+    width: 500px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #2D3142; 
+    background-color:#4F5D75;
+}
+h1, h2{
+    color: #EF8354;
+    font-weight: bold;
+}
+b{
+    color: #4F5D75;
+}
+ol{
+    text-align: left;
+}
+.box{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #BFC0C0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.bye{
+    background-color: #BFC0C0;
+    height: 20px;
+    font-style: italic;
 }
