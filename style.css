@@ -25,7 +25,16 @@ ol{
     -webkit-border-radius: 10px;
 }
 .bye{
+    padding: 5px;
     background-color: #BFC0C0;
-    height: 20px;
     font-style: italic;
+}
+a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+}
+a:hover{
+    color: #EF8354;
 }
