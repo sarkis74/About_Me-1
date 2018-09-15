@@ -16,6 +16,7 @@ b{
 }
 ol{
     text-align: left;
+    line-height: 1.4em;
 }
 .box{
     padding: 10px;
@@ -24,6 +25,9 @@ ol{
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
+    -moz-box-shadow: 5px 5px #777777;
+    -webkit-box-shadow: 5px 5px #777777;
+    box-shadow: 5px 5px #777777;
 }
 .bye{
     padding: 5px;
