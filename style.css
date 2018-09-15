@@ -1,6 +1,6 @@
 body{
     margin: 30px auto 30px auto;
-    width: 500px;
+    width: 700px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #2D3142; 
@@ -26,15 +26,34 @@ ol{
 }
 .bye{
     padding: 5px;
-    background-color: #BFC0C0;
+    background-color: rgb(226, 226, 226);
     font-style: italic;
 }
 a{
     font-weight: bold;
-    color: white;
+    color: #4F5D75;
     text-decoration: none;
     font-style: normal;
 }
 a:hover{
     color: #EF8354;
+}
+p{
+    text-align: left;
+}
+nav{
+    background-color: rgb(226, 226, 226);
+    padding: 0.5px;
+}
+ul li{
+    display: inline;
+    width: 600px;
+}
+.noBullet{
+    list-style: square;
+}
+.answer{
+    color:#EF8354;
+    font-weight: bold;
+    padding-left: 0;
 }
